@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.ChangePwdActivity"
+    android:background="#B2DFEE"
+    android:padding="15dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="欢迎来到修改密码页面"
+        android:textColor="#e98657"
+        android:textSize="20sp"></TextView>
+
+    <EditText
+        android:id="@+id/username01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:lines="1"
+        android:hint="请输入用户名">
+    </EditText>
+
+    <EditText
+        android:id="@+id/change_old"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:lines="1"
+        android:hint="请输入原密码">
+    </EditText>
+
+    <EditText
+        android:id="@+id/pwd_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入新密码"
+        android:lines="1"
+        android:paddingTop="20dp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/pwd_new02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请再次确认新密码"
+        android:lines="1"
+        android:paddingTop="20dp">
+    </EditText>
+
+    <Button
+        android:id="@+id/commit_change"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="80dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="确定修改"
+        android:background="@drawable/bg_btn1"
+        android:textSize="18sp"
+        android:onClick="goToChange"></Button>
+
+
+    <Button
+        android:id="@+id/deleteUser"
+        android:layout_marginTop="20dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="80dp"
+        android:background="@drawable/bg_btn1"
+        android:onClick="goToDel"
+        android:text="点击注销"
+        android:textSize="18sp"></Button>
+
+
+</LinearLayout>

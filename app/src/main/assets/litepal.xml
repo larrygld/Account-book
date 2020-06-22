@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+<!--    库名称-->
+    <dbname value="MoneyCount"></dbname>
+<!--    库版本-->
+    <version value="1"></version>
+    <list>
+<!--        实体类对应库中的表-->
+        <mapping class="com.yuukidach.ucount.model.IOItem"></mapping>
+        <mapping class="com.yuukidach.ucount.model.BookItem"></mapping>
+        <mapping class="com.yuukidach.ucount.user.User"></mapping>
+    </list>
+</litepal>
